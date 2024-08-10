@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Project.css">
+  <title>Arjav's Calculator</title>
+</head>
+<body bgcolor="black">
+  <div class="full">
+<div id="JS">
+<input type="text" id="display" placeholder="Enter" readonly>
+<div class="button-container">
+  <button class="Click" onclick="screenNumbers = '';
+  document.querySelector('#display').value = screenNumbers;">C</button>
+  <button class="Click" onclick="screenNumbers = screenNumbers + 1;
+  document.querySelector('#display').value = screenNumbers;">1</button>
+
+  <button class="Click" onclick="screenNumbers = screenNumbers + 2;
+  document.querySelector('#display').value = screenNumbers;">2</button>
+
+  <button class="Click" onclick="screenNumbers = screenNumbers + '+';
+  document.querySelector('#display').value = screenNumbers;">+</button>
+
+  <button class="Click" onclick="screenNumbers = screenNumbers + 3;
+  document.querySelector('#display').value = screenNumbers;">3</button>
+
+  <button class="Click" onclick="screenNumbers = screenNumbers + 4;
+  document.querySelector('#display').value = screenNumbers;">4</button>
+
+  <button class="Click"onclick="screenNumbers = screenNumbers + '-';
+  document.querySelector('#display').value = screenNumbers;">-</button>
+
+  <button class="Click" onclick="screenNumbers = screenNumbers +5;
+  document.querySelector('#display').value = screenNumbers;">5</button>
+
+  <button class="Click" onclick="screenNumbers = screenNumbers + 6;
+  document.querySelector('#display').value = screenNumbers;">6</button>
+
+  <button class="Click" onclick="screenNumbers = screenNumbers + '*';
+  document.querySelector('#display').value = screenNumbers;">×</button>
+  <button class="Click" onclick="screenNumbers = screenNumbers + 7;
+  document.querySelector('#display').value = screenNumbers;">7</button>
+
+  <button class="Click" onclick="screenNumbers = screenNumbers + 8;
+  document.querySelector('#display').value = screenNumbers;">8</button>
+
+  <button class="Click" onclick="screenNumbers = screenNumbers + '/';
+  document.querySelector('#display').value = screenNumbers;">/</button>
+
+  <button class="Click" onclick="screenNumbers = eval(screenNumbers);
+  document.querySelector('#display').value = screenNumbers;
+  ">=</button>
+
+  <button class="Click" onclick="screenNumbers = screenNumbers + 9;
+  document.querySelector('#display').value = screenNumbers;">9</button>
+
+  <button class="Click" onclick="screenNumbers = screenNumbers + 0;
+  document.querySelector('#display').value = screenNumbers;">0</button>
+
+  <button class="Click" onclick="screenNumbers = screenNumbers + '.';
+  document.querySelector('#display').value = screenNumbers;">.</button>
+
+ <button class="Click" onclick="screenNumbers = Math.sqrt(screenNumbers);document.querySelector('#display').value = screenNumbers;">√</button>
+
+ <button class="Click" onclick="screenNumbers = Math.cbrt(screenNumbers);document.querySelector('#display').value = screenNumbers;">∛</button>
+
+ <button class="Click" onclick="screenNumbers = screenNumbers*screenNumbers ;document.querySelector('#display').value = screenNumbers;">x²</button>
+
+ <button class="Click" onclick="screenNumbers = screenNumbers*screenNumbers*screenNumbers;document.querySelector('#display').value = screenNumbers;">x³</button>
+
+ <button class="half" onclick="screenNumbers = 1/screenNumbers ;document.querySelector('#display').value = screenNumbers;">1/x</button>
+</div>
+</div>
+</div>
+<script>
+  let screenNumbers = '';
+  document.querySelector('#display').value = screenNumbers;
+</script>  
+</body>
+</html>
